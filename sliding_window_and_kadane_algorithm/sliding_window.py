@@ -3,6 +3,7 @@
 # result in an optimized manner than using the nested loops(naive approach).
 # The main goal of this algorithm is to reuse the result of one window to
 # compute the result of the next window.
+# https://www.scaler.com/topics/sliding-window-algorithm/
 
 
 # For Example
@@ -10,34 +11,35 @@
 # the maximum sum of ‘k’ consecutive elements in the array.
 
 
-def get_max_sum(arr, n, k):
+def get_max_sum(arr, length, window_size):
+    # This function returns the maximum sum for a particular window size in the array
+
     max_sum = -1
-    sum = 0
+    present_sum = 0
 
-    for i in range(k):
-        sum = sum + arr[i]
+    for index in range(window_size):
+        present_sum = present_sum + arr[index]
 
-    max_sum = sum
+    max_sum = present_sum
 
-    for i in range(k, n):
-        sum = sum - arr[i-k]
-        sum = sum + arr[i]
-        max_sum = max(max_sum, sum)
+    for index in range(window_size, length):
+        present_sum = present_sum - arr[index - window_size]
+        present_sum = present_sum + arr[index]
+        max_sum = max(max_sum, present_sum)
 
+    # Returns the maximum sum for the given window_size
     return max_sum
 
 
-# taking the size of the array from the user
-n = int(input("Enter the size of the array: "))
+# taking the window size
+window_size = int(input("Enter the window size: "))
 
-k = int(input("Enter the window size: "))
+user_input = input("Enter numbers separated by a comma:").strip()
+arr = [int(item) for item in user_input.split(",")]
 
-arr = []
+# using the len() function to calculate the length of the array
+length = len(arr)
 
-for i in range(n):
-    x = int(input("Enter the element: "))
-    arr.append(x)
+ans = get_max_sum(arr, length, window_size)
 
-ans = get_max_sum(arr, n, k)
-
-print(f"The maximum sum of the array for window size {k} is {ans}")
+print(f"The maximum sum of the array for window size {window_size} is {ans}")
