@@ -309,6 +309,7 @@
   * [Floyd Warshall](dynamic_programming/floyd_warshall.py)
   * [Integer Partition](dynamic_programming/integer_partition.py)
   * [Iterating Through Submasks](dynamic_programming/iterating_through_submasks.py)
+  * [K Means Clustering Tensorflow](dynamic_programming/k_means_clustering_tensorflow.py)
   * [Knapsack](dynamic_programming/knapsack.py)
   * [Longest Common Subsequence](dynamic_programming/longest_common_subsequence.py)
   * [Longest Common Substring](dynamic_programming/longest_common_substring.py)
@@ -317,6 +318,7 @@
   * [Longest Sub Array](dynamic_programming/longest_sub_array.py)
   * [Matrix Chain Order](dynamic_programming/matrix_chain_order.py)
   * [Max Non Adjacent Sum](dynamic_programming/max_non_adjacent_sum.py)
+  * [Max Product Subarray](dynamic_programming/max_product_subarray.py)
   * [Max Sub Array](dynamic_programming/max_sub_array.py)
   * [Max Sum Contiguous Subsequence](dynamic_programming/max_sum_contiguous_subsequence.py)
   * [Min Distance Up Bottom](dynamic_programming/min_distance_up_bottom.py)
@@ -684,6 +686,7 @@
   * [2 Hidden Layers Neural Network](neural_network/2_hidden_layers_neural_network.py)
   * [Back Propagation Neural Network](neural_network/back_propagation_neural_network.py)
   * [Convolution Neural Network](neural_network/convolution_neural_network.py)
+  * [Input Data](neural_network/input_data.py)
   * [Perceptron](neural_network/perceptron.py)
   * [Simple Neural Network](neural_network/simple_neural_network.py)
 
@@ -714,6 +717,7 @@
   * [Archimedes Principle](physics/archimedes_principle.py)
   * [Casimir Effect](physics/casimir_effect.py)
   * [Centripetal Force](physics/centripetal_force.py)
+  * [Grahams Law](physics/grahams_law.py)
   * [Horizontal Projectile Motion](physics/horizontal_projectile_motion.py)
   * [Hubble Parameter](physics/hubble_parameter.py)
   * [Ideal Gas Law](physics/ideal_gas_law.py)
@@ -936,6 +940,8 @@
     * [Sol1](project_euler/problem_091/sol1.py)
   * Problem 092
     * [Sol1](project_euler/problem_092/sol1.py)
+  * Problem 094
+    * [Sol1](project_euler/problem_094/sol1.py)
   * Problem 097
     * [Sol1](project_euler/problem_097/sol1.py)
   * Problem 099
@@ -1016,6 +1022,8 @@
     * [Sol1](project_euler/problem_587/sol1.py)
   * Problem 686
     * [Sol1](project_euler/problem_686/sol1.py)
+  * Problem 800
+    * [Sol1](project_euler/problem_800/sol1.py)
 
 ## Quantum
   * [Bb84](quantum/bb84.py)
@@ -1025,6 +1033,7 @@
   * [Q Fourier Transform](quantum/q_fourier_transform.py)
   * [Q Full Adder](quantum/q_full_adder.py)
   * [Quantum Entanglement](quantum/quantum_entanglement.py)
+  * [Quantum Random](quantum/quantum_random.py)
   * [Quantum Teleportation](quantum/quantum_teleportation.py)
   * [Ripple Adder Classic](quantum/ripple_adder_classic.py)
   * [Single Qubit Measure](quantum/single_qubit_measure.py)
